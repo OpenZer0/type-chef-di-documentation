@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome to type-chef-di](README.md)
+* [👋 Welcome to type-chef-di documentation](README.md)
 
 ## Overview
 
@@ -8,7 +8,7 @@
 
 ## Fundamentals
 
-* [👨🍳 Injection](fundamentals/injection/README.md)
+* [👨🍳 👨🍳 Injection](fundamentals/injection/README.md)
   * [Token registration](fundamentals/injection/token-registration.md)
   * [🍕 Type injection](fundamentals/injection/type-injection.md)
   * [☕ Token Injection](fundamentals/injection/token-injection.md)

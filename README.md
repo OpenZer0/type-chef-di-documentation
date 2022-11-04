@@ -2,7 +2,7 @@
 
 ## Overview
 
-A type-chef-di egy dependenci injection (di) /  **inversion of control** (**IoC**) lib.&#x20;
+A type-chef-di is a general-purpose dependency injection (di / IoC) lib.
 
 {% hint style="info" %}
 <mark style="color:orange;">**Documentation is in progress**</mark>
@@ -17,8 +17,6 @@ A type-chef-di egy dependenci injection (di) /  **inversion of control** (**IoC*
 {% content-ref url="overview/getting-started.md" %}
 [getting-started.md](overview/getting-started.md)
 {% endcontent-ref %}
-
-
 
 ## Foundamentals
 
