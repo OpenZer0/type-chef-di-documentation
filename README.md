@@ -1,4 +1,4 @@
-# 👋 Welcome to type-chef-di
+# 👋 Welcome to type-chef-di documentation
 
 ## Overview
 
