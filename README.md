@@ -2,7 +2,7 @@
 
 ## Overview
 
-A type-chef-di is a general-purpose dependency injection (di / IoC) lib.
+type-chef-di is a general-purpose dependency injection (di / IoC) lib.
 
 {% hint style="info" %}
 <mark style="color:orange;">**Documentation is in progress**</mark>
