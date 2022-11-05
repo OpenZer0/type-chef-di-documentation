@@ -15,7 +15,7 @@
   * [☕ Token Injection](fundamentals/injection/token-injection.md)
   * [🌮 Mixed injection](fundamentals/injection/mixed-injection.md)
 * [🛠 Decorators](fundamentals/decorators/README.md)
-  * [✅ @Injectable()](fundamentals/decorators/injectable.md)
+  * [✅ @Injectable({instantiation: "singleton" | "prototype"})](fundamentals/decorators/injectable.md)
   * [🎯 @Inject(key: string)](fundamentals/decorators/inject-key-string.md)
   * [🍍 @InjectProperty(key: string)](fundamentals/decorators/injectproperty-key-string.md)
   * [🍭 @Setter()](fundamentals/decorators/setter.md)
