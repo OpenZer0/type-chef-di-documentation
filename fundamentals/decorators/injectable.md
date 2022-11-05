@@ -1,7 +1,9 @@
-# ✅ @Injectable({instantiation: "singleton" | "prototype"})
+# ✅ @Injectable()
+
+
 
 ```typescript
-@Injectable()
+@Injectable
 class Something {
 
     public getValue() {
@@ -9,7 +11,7 @@ class Something {
     }
 }
 
-@Injectable()
+@Injectable
 class SomethingElse {
     constructor(private readonly something: Something, private readonly str: string = "pizza") {
     }
@@ -19,7 +21,7 @@ class SomethingElse {
     }
 }
 
-@Injectable()
+@Injectable
 class Client {
     constructor(private readonly something: Something, private readonly somethingElse: SomethingElse) {
     }
@@ -29,7 +31,7 @@ class Client {
     }
 }
 
-@Injectable()
+@Injectable
 class Service {
     constructor(private readonly client: Client) {
     }
