@@ -8,6 +8,7 @@
 
 ## Fundamentals
 
+* [🍎 Container Options, extendability](fundamentals/container-options-extendability.md)
 * [👨🍳 Injection](fundamentals/injection/README.md)
   * [🍕 Type injection](fundamentals/injection/type-injection.md)
   * [🍪 Token registration](fundamentals/injection/token-registration.md)
