@@ -1,11 +1,9 @@
 # ☕ Token Injection
 
-
-
-If you want more controll about the injection process you can use the token injection. This let you inject the valuse that you registerd.
+If you want more control over the injection process you can use the token injection. This lets you inject the value that you registered.
 
 {% hint style="info" %}
-The di can't resolve automaticaly the primitve types, eg. string, number... You must specify \*(register) the value and use the @Inject decorator for that
+The di can't resolve automatically the primitive types, eg. string, number, interfaces... You must specify [token-registration.md](token-registration.md "mention") the value and use the @Inject decorator for that
 {% endhint %}
 
 ```typescript
@@ -42,5 +40,4 @@ async function run() {
 }
 
 run();
-
 ```
