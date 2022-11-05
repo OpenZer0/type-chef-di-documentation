@@ -1,6 +1,6 @@
 # 🍍 @InjectProperty(key: string)
 
-
+Basically the same as [inject-key-string.md](inject-key-string.md "mention") but with class properties.
 
 ```typescript
 class Test {
