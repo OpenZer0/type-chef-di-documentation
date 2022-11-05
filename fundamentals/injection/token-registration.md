@@ -1,26 +1,28 @@
-# Token registration
+---
+description: register, registerTypes, asSingleton, asFactory
+---
 
+# 🍪 Token registration
 
-
-value can be a class definition, constant or a function
+Value can be a class definition, primitive, or a function.
 
 ```typescript
 container.register('key', value)
 ```
 
-new instance (default)
+New Instance
 
 ```typescript
 container.register('key2', value).asPrototype()
 ```
 
-as singleton (use the same instance)
+Use the same instance (default)
 
 ```typescript
 container.register('key3', value).asSingleton()
 ```
 
-register with context: @Inject('paramKey') ... it will replace to 'otherKey'
+Register with context: @Inject('paramKey') ... it will replace injection keys (this enables to create different variants)
 
 ```typescript
 container.register('key4', value)
@@ -28,19 +30,19 @@ container.register('key4', value)
     .withContext({'paramKey': 'otherKey', 'paramKey2': 'otherKey2'})
 ```
 
-register constant
+Register constant (can be primitive, function, etc)
 
 ```typescript
 container.register('key4', 'some constant').asConstant()
 ```
 
-registrate by type (if you dont want to enable auto creaton you can still use this)
+Registration by type with a random key (if you don't want to enable auto-creation you can still use this)
 
 ```typescript
 container.registerTypes([MyClass, Myclass2])
 ```
 
-factory
+Factory
 
 ```typescript
 container.register('factoryKey', FactoryClass).asFactory();

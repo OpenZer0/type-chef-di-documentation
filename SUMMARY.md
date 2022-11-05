@@ -8,9 +8,9 @@
 
 ## Fundamentals
 
-* [👨🍳 👨🍳 Injection](fundamentals/injection/README.md)
-  * [Token registration](fundamentals/injection/token-registration.md)
+* [👨🍳 Injection](fundamentals/injection/README.md)
   * [🍕 Type injection](fundamentals/injection/type-injection.md)
+  * [🍪 Token registration](fundamentals/injection/token-registration.md)
   * [☕ Token Injection](fundamentals/injection/token-injection.md)
   * [🌮 Mixed injection](fundamentals/injection/mixed-injection.md)
 * [🛠 Decorators](fundamentals/decorators/README.md)
