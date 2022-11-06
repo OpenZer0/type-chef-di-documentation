@@ -15,7 +15,7 @@ When you call container.resolve / resolveByType etc. It will try to resolve with
 
 ### Initializers
 
-Initializers run after every instantiation. The container has some default initializatizers eg. @Init, @InjectProperty, @RunBefore. You can create your own just implement the IInitializer interface:
+Initializers run after every instantiation. The container has some default initializatizers eg. [methodwrapper-key-string.md](decorators/methodwrapper-key-string.md "mention"), [runbefore-key-string.md](decorators/runbefore-key-string.md "mention"), [initmethod.md](decorators/initmethod.md "mention") etc. You can create your own just implement the IInitializer interface:
 
 ```typescript
 class StatusInitializer implements IInitializer {
