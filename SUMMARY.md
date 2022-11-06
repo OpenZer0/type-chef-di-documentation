@@ -22,9 +22,9 @@
   * [🔆 @InitMethod()](fundamentals/decorators/initmethod.md)
   * [🏭 @FactoryMethod()](fundamentals/decorators/factorymethod.md)
   * [⚡ @AddTags(tags)](fundamentals/decorators/addtags-tags.md)
-  * [🪃 @RunBefore(key: string)](fundamentals/decorators/runbefore-key-string.md)
-  * [🛴 @RunAfter(key: string)](fundamentals/decorators/runafter-key-string.md)
-  * [🌕 @MethodWrapper(key: string)](fundamentals/decorators/methodwrapper-key-string.md)
+  * [🪃 @RunBefore(key: string | Type\<IRunBefore>)](fundamentals/decorators/runbefore-key-string.md)
+  * [🛴 @RunAfter(key: string | Type\<IRunAfter>)](fundamentals/decorators/runafter-key-string.md)
+  * [🌕 @MethodWrapper(key: string | Type\<IMethodWrapper>)](fundamentals/decorators/methodwrapper-key-string.md)
 
 ## Use Cases
 

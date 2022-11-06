@@ -1,52 +1,26 @@
-# 🛴 @RunAfter(key: string)
-
-
-
-**!! Currently don't work with "this" ref !!**
-
-* you can use this decorators individually or together
+# 🛴 @RunAfter(key: string | Type\<IRunAfter>)
 
 
 
 ```typescript
- class Test {
-        @MethodWrapper('MyMethodWrapper')
-        @RunAfter('MyRunAfter')
-        @RunBefore('MyRunBefore')
-        testFn(p: string, p2: string) {
-            console.log("p = " + p, " p2 = " + p2);
-        }
+ class MyRunAfter implements IRunAfter {
+      constructor() { // DI will resolve dependencies (type & key injection)
     }
-    class MyRunAfter implements IRunAfter {
-        run(): void {
-            console.log('run this after.')
-        }
-    }
-    class MyRunBefore implements IRunBefore {
-        run() {
-            console.log("run before.")
-        }
-    }
-    class MyMethodWrapper implements IMethodWrapper {
-        run(next: Function, params: any[]): any {
-            console.log("wrapper before.")
-            next(...params);
-            console.log("wrapper after.")
-        }
+    
+    run() {
+        console.log('run this after.')
     }
 }
-    container.register('MyRunBefore', MyRunBefore);
-    container.register('MyRunAfter', MyRunAfter);
-    container.register('MyMethodWrapper', MyMethodWrapper);
-    container.register('test', Test);
-    const testObj = await container.resolve<Test>('test');
-    testObj.testFn('test', 'test2');
-// log result:    
-/*
-wrapper before.
-run before.
-p = test  p2 = test2
-run this after.
-wrapper after.
-*/
+
+class Test {
+
+    @RunAfter(MyRunAfter)  // or use registerd string key
+    after(p1:string, p2: string){
+        console.log("original fn: ", p1, p2)
+            // ...
+    }
+        
+}
+  
+}
 ```
