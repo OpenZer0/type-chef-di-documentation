@@ -18,7 +18,10 @@ class Service {
 }
 class Client {
 
-    constructor(@Inject("clientStr") private readonly value: string, @Inject("service") private readonly service: Service) {
+    constructor(
+             @Inject("clientStr") private readonly value: string,
+             @Inject("service") private readonly service: Service // or  @Inject<IService>(Service)
+             ) {
     }
 
     public say() {
